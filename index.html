@@ -37,7 +37,7 @@
                 console.log("variable tensor");
                 var tensor=tf.tensor1d([parseInt(celsius)]);
                 console.log("variable prediction");
-                //var fahrenheit = parseInt(celsius*9/5+32);
+                
                 var prediccion=model.predict(tensor).dataSync();
                 prediccion=Math.round(prediccion);
                 console.log("imprimir resultado en id resultado");
